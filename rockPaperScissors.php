@@ -47,11 +47,12 @@ do {
         $nbGames++;
         echo "\e[1;33mNombre de parties: $nbGames. Score: $username: $scorePlayer  -  $scoreCPU :CPU\e[0m" . PHP_EOL;
 
+        $answerContinue = false;
         do {
             $prompt = "\e[1;33mVoulez-vous continuez y/n?: \e[0m";
             echo $prompt;
             $line = readline('');
-            if ($line === 'y' || $line === 'n') $answerContinue = 1;
+            if ($line == 'y' || $line == 'n') $answerContinue = true;
         } while(!$answerContinue);
 
         if ($line == 'n') $keepPlaying = false;
