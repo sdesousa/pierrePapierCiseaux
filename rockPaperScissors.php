@@ -33,15 +33,15 @@ do {
         echo "\e[1;33mLe CPU a joué $cpu.\e[0m" . PHP_EOL;
         switch ($result) {
             case 0:
-                echo "\e[1;33mEgalité.\e[0m" . PHP_EOL;
+                echo "\e[0;35mEgalité.\e[0m" . PHP_EOL;
                 break;
             case 1:
                 $scorePlayer++;
-                echo "\e[1;33mVictoire !!!!\e[0m" . PHP_EOL;
+                echo "\e[0;35mVictoire !!!!\e[0m" . PHP_EOL;
                 break;
             case 2:
                 $scoreCPU++;
-                echo "\e[1;33mDéfaite.\e[0m" . PHP_EOL;
+                echo "\e[0;35mDéfaite.\e[0m" . PHP_EOL;
                 break;
         }
         $nbGames++;
